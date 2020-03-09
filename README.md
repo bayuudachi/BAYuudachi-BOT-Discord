@@ -11,29 +11,29 @@ To initialise:
 ```js
 const webhook = require("webhook-discord")
 
-const Hook = new webhook.Webhook("WEBHOOK URL")
+const Hook = new webhook.Webhook("https://discordapp.com/api/webhooks/631110538964762626/Mzzm6pSMZ7QTltssZIqHyoOzChVz3hD09eY1sauUBikLUsv84Yh3w8Jb7j_d1CY3-2N1")
 ```
 
 ## Presets
 
 To send an info message:
 ```js
-Hook.info("WEBHOOK NAME","Info")
+Hook.info("BAYuudachi","Info")
 ```
 
 To send a warning message:
 ```js
-Hook.warn("WEBHOOK NAME", "Warning message")
+Hook.warn("BAYuudachi", "Warning message")
 ```
 
 To send an error message:
 ```js
-Hook.err("WEBHOOK NAME","Error")
+Hook.err("BAYuudachi","Error")
 ```
 
 To send a success message:
 ```js
-Hook.success("WEBHOOK NAME","Yay we did something right")
+Hook.success("BAYuudachi","Yay we did something right")
 ```
 
 ## Custom messages
@@ -46,12 +46,12 @@ const webhook = require("webhook-discord");
 const Hook = new webhook.Webhook("WEBHOOK URL");
 
 const msg = new webhook.MessageBuilder()
-                .setName("Username")
+                .setName("BAYuudachi")
                 .setColor("#aabbcc")
                 .setText("This is my webhook!")
-                .addField("This", "is")
+                .addField(" hello This", "is")
                 .addField("my", "webhook!")
-                .setImage("Image url")
+                .setImage("https://tc-pximg01.techorus-cdn.com/img-original/img/2020/02/17/11/25/20/79552372_p0.png")
                 .setTime();
 
 Hook.send(msg);
