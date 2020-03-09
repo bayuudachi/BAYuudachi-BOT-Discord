@@ -43,7 +43,7 @@ To send custom messages, you should make use of the MessageBuilder.
 ```js
 const webhook = require("webhook-discord");
 
-const Hook = new webhook.Webhook("WEBHOOK URL");
+const Hook = new webhook.Webhook("https://discordapp.com/api/webhooks/631110538964762626/Mzzm6pSMZ7QTltssZIqHyoOzChVz3hD09eY1sauUBikLUsv84Yh3w8Jb7j_d1CY3-2N1");
 
 const msg = new webhook.MessageBuilder()
                 .setName("BAYuudachi")
@@ -54,7 +54,7 @@ const msg = new webhook.MessageBuilder()
                 .setImage("https://tc-pximg01.techorus-cdn.com/img-original/img/2020/02/17/11/25/20/79552372_p0.png")
                 .setTime();
 
-Hook.send(msg);
+Hook.send(msg); hello world
 ```
 
 # Installation
